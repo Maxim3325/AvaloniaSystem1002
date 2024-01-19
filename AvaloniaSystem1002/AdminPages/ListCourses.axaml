@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaSystem1002.Pages.ListCourses">
+  <Grid RowDefinitions="50, *">
+    <Button Name="AdminExit" Content="Выход в меню администратора" HorizontalAlignment="Left" Margin="10"/>
+    <Label Content="Список курсов" HorizontalAlignment="Center" Margin="5"/>
+
+    <DataGrid Name="CoursesDG" Grid.Column="0" Grid.Row="1" BorderBrush="Black"
+      BorderThickness="5" Margin="5" IsReadOnly="True">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Курсы:" Binding ="{Binding Name}"/>
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
+</UserControl>

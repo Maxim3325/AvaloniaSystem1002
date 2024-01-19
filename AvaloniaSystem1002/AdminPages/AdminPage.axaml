@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaSystem1002.Pages.AdminPage">
+
+  <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">
+    <Label Content="  Меню администратора" Margin="3"/>
+    <Button Name="TeacherBtn" Content="Список преподавателей" Width="200" HorizontalContentAlignment="Center" Margin="3"/>
+    <Button Name="CoursCategoryBtn" Content="Список категорий курсов" Width="200" HorizontalContentAlignment="Center" Margin="3"/>
+    <Button Name="CoursBtn" Content="Список курсов" Width="200" HorizontalContentAlignment="Center" Margin="3"/>
+    
+  </StackPanel>
+</UserControl>
