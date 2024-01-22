@@ -1,4 +1,6 @@
 using Avalonia.Controls;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using static AvaloniaSystem1002.Classes.Helper;
 
 namespace AvaloniaSystem1002.Pages
@@ -9,6 +11,7 @@ namespace AvaloniaSystem1002.Pages
         {
             InitializeComponent();
             AdminExit.Click += AdminExit_Click;
+            LoadData();
         }
 
         private void AdminExit_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -18,7 +21,11 @@ namespace AvaloniaSystem1002.Pages
 
         private void LoadData()
         {
+            context.Courses.Load();
 
+            var ListCourses = context.Courses.ToList();
+
+            CoursesDG.ItemsSource = ListCourses;
         }
     }
 }

@@ -16,8 +16,8 @@
     </DataGrid>
     <Grid ColumnDefinitions="*, 100, *" Grid.Row="2">
       <Button Name="DeleteBtn" Content="Удалить" Background="#4A67F7" HorizontalAlignment="Right" Width="90" HorizontalContentAlignment="Center"/>
-      <Button Name="EditBtn" Content="Добавить" Background="#4A67F7" Grid.Column="2" HorizontalAlignment="Left" Width="90" HorizontalContentAlignment="Center"/>
-      <Button Name="AddBtn" Content="Изменить" Background="#4A67F7" Grid.Column="1" HorizontalAlignment="Center" Width="90" HorizontalContentAlignment="Center"/>
+      <Button Name="AddBtn" Content="Добавить" Background="#4A67F7" Grid.Column="2" HorizontalAlignment="Left" Width="90" HorizontalContentAlignment="Center"/>
+      <Button Name="EditBtn" Content="Изменить" Background="#4A67F7" Grid.Column="1" HorizontalAlignment="Center" Width="90" HorizontalContentAlignment="Center"/>
     </Grid>
 </Grid>
 </UserControl>

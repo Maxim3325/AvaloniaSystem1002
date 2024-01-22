@@ -12,7 +12,7 @@
 				 TextWrapping="Wrap" AcceptsReturn="True"
 		 VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
-    <Button Name="OkBtn" Content="Ок" Width="100" Height="30"
+    <Button Name="OkBtn" Content="Ок" Width="120" Height="30"
 				HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
 
     <Button Name="BackBtn" Content="Назад" Width="100" Height="30"

@@ -15,5 +15,10 @@ namespace AvaloniaSystem1002.Pages
         {
             MainMainFrame.Content = new AdminPage();
         }
+
+        private void LoadData()
+        {
+            
+        }
     }
 }
