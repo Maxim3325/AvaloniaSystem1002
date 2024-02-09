@@ -11,7 +11,25 @@ namespace AvaloniaSystem1002.Pages
         {
             InitializeComponent();
             AdminExit.Click += AdminExit_Click;
+            DeleteBtn.Click += DeleteBtn_Click;
+            EditBtn.Click += EditBtn_Click;
+            AddBtn.Click += AddBtn_Click;
             LoadData();
+        }
+
+        private void AddBtn_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            
+        }
+
+        private void EditBtn_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            
+        }
+
+        private void DeleteBtn_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            
         }
 
         private void AdminExit_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)

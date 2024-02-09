@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AvaloniaSystem1002.Pages.ListCourses">
-  <Grid RowDefinitions="50, *">
+  <Grid RowDefinitions="50, *, 50">
     <Button Name="AdminExit" Content="Выход в меню администратора" HorizontalAlignment="Left" Margin="10"/>
     <Label Content="Список курсов" HorizontalAlignment="Center" Margin="5"/>
 
@@ -14,5 +14,10 @@
         <DataGridTextColumn Header="Курсы:" Binding ="{Binding Name}"/>
       </DataGrid.Columns>
     </DataGrid>
+    <Grid ColumnDefinitions="*, 100, *" Grid.Row="2">
+      <Button Name="DeleteBtn" Content="Удалить" Background="#4A67F7" HorizontalAlignment="Right" Width="90" HorizontalContentAlignment="Center"/>
+      <Button Name="AddBtn" Content="Добавить" Background="#4A67F7" Grid.Column="2" HorizontalAlignment="Left" Width="90" HorizontalContentAlignment="Center"/>
+      <Button Name="EditBtn" Content="Изменить" Background="#4A67F7" Grid.Column="1" HorizontalAlignment="Center" Width="90" HorizontalContentAlignment="Center"/>
+    </Grid>
   </Grid>
 </UserControl>
